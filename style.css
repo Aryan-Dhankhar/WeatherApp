@@ -1,0 +1,125 @@
+Basic Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font */
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to bottom, #6dd5ed, #2193b0);
+  color: #fff;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Weather Container */
+.weather-container {
+  width: 320px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+h1 {
+  font-size: 28px; /* Slightly smaller title */
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  text-align: center;
+}
+
+input:focus {
+  border-color: #4caf50;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Weather Data Section */
+#weather-data {
+  margin-top: 20px;
+  display: none;
+}
+
+/* Icon Styles */
+#weather-icon {
+  font-size: 70px; 
+  margin-bottom: 15px;
+  color: #4caf50;
+}
+
+/* Weather Info Styles */
+p {
+  font-size: 20px; 
+  margin: 12px 0;
+  line-height: 1.4;
+}
+
+/* Label Styling */
+#temperature,
+#humidity,
+#wind-speed {
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 8px 0;
+}
+
+/* Label Text */
+#temperature label,
+#humidity label,
+#wind-speed label {
+  font-weight: bold;
+  font-size: 18px; 
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Value Styling */
+#temperature span,
+#humidity span,
+#wind-speed span {
+  color: #2193b0;
+  font-size: 30px; /* Slightly smaller font size for values */
+  font-weight: bold;
+}
+
+/* Enhancing visibility */
+span {
+  font-weight: bold;
+  font-size: 28px;
+  color: #333;
+}
